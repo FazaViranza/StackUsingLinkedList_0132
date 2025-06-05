@@ -54,7 +54,6 @@ public:
         top = top->next;
     }
 
-    
     // Peek/Top operation: Retrieve the value of the topmost element without removing it
     void peek()
     {
@@ -112,10 +111,7 @@ int main()
             cout << "Invalid choice. Try again." << endl;
             break;
         }
-
         cout << endl;
-
     }
-
     return 0;
 }
