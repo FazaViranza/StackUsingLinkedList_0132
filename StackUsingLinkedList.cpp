@@ -54,13 +54,13 @@ public:
         top = top->next;
     }
 
-    // Peek/Top operation: Retrieve the value of the topmost element without removing it
+    
     void peek()
     {
         if (isEmpty())
         {
             cout << "List if empty." << endl;
-            return; //If the stack is empty, print a message and return
+            return; 
         }
         else
         {
@@ -71,7 +71,7 @@ public:
                 current = current->next;
             }
             cout << endl;
-        }// Return the value of the top node
+        }
     }
 };
 
@@ -96,10 +96,10 @@ int main()
         case 1:
             cout << "Enter the value to push: ";
             cin >> value;
-            stack.push(value); // Push the entered value onto the stack
+            stack.push(value); 
             break;
         case 2:
-            stack.pop(); // Popthe topmost element from the stack
+            stack.pop(); 
             break;
         case 3:
             stack.peek();
