@@ -63,6 +63,15 @@ public:
             return; //If the stack is empty, print a message and return
         }
         else
-
+        {
+            Node *current = top;
+            while (current != NULL)
+            {
+                cout << current->data<< "  " << endl;
+                current = current->next;
+            }
+            cout << endl;
+        }// Return the value of the top node
     }
-}
+};
+
